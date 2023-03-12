@@ -1,0 +1,156 @@
+.header {
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #E4E5EA;
+    justify-content: space-between;
+    margin: 55px 0 0;
+    min-width: 320px;
+}
+
+.header__logo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.header__logo {
+    background-image: url('../../images/logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 24px;
+    color: #E4E5EA;
+    width: 140px;
+    margin: 0;
+}
+
+.header__logo-title {
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 90px;
+    width: 140px;
+    font-style: normal;
+    font-family: 'Montserrat';
+    filter: invert(60%)
+}
+
+.header__nav-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #E4E5EA;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.header__contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+}
+
+.contact-phone {
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    margin: 0 17px 0;
+    padding: 0;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+.telegram {
+    background-image: url('../../images/telegram.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.viber {
+    background-image: url('../../images/viber.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.whatsapp {
+    background-image: url('../../images/whatsapp.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width:1024px) {
+    .header__logo {
+        display: none;
+    }
+
+    .header__logo-title {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:968px) {
+    .header {
+        justify-content: center;
+    }
+
+    .header__contacts {
+        display: none;
+    }
+}
+
+@media screen and (max-width:690px) {
+    .header {
+        position: fixed;
+        top: 0;
+        background: black;
+        margin-top: 0;
+        height: 55px
+    }
+
+    .header__link {
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0em;
+
+    }
+    .hide {
+        display: none;
+    }
+    .header__nav-container {
+        width: 100%;
+        gap: 5%;
+justify-content: space-around;
+    }
+
+}
